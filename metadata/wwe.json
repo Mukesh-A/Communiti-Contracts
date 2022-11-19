@@ -1,0 +1,17 @@
+
+{
+    "name": "Johncena",
+    "description":"John Felix Anthony Cena Jr. is an American professional wrestler, actor, and former rapper. He is currently signed to WWE. Widely regarded as one of the greatest professional wrestlers of all time, he is tied with Ric Flair for the most world championship reigns in professional wrestling history.",
+    "image":"https://ipfs.io/ipfs/QmZr4xDfXYT5aCJ5uFToDrATwwNy63eJNrn9VVb2vAyHkw",
+    "attributes":[
+        {
+            "trait_type":"Strength",
+            "value":9,
+            "max_value":10
+        },{
+            "trait_type":"punch",
+            "value":9,
+            "max_value":10
+        }
+    ]
+}

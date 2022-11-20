@@ -59,13 +59,16 @@ contract ERC721 {
         view
         returns (bool)
     {
-        return  [_owner][_operator];
+        return _operatorApprovals[_owner][_operator];
     }
 
     //like in setApprove all if u dont want to approve all the nft then just approve sign NFT so approve funtion is used
     function approve(address _approved, uint256 _tokenId) public payable {
         address owner = ownerOf(_tokenId);
-        require(msg.sender == owner || isApprovedForAll(owner,msg.sender),"MSG.SENDER is not owner or operator");
+        require(
+            msg.sender == owner || isApprovedForAll(owner, msg.sender),
+            "MSG.SENDER is not owner or operator"
+        );
         _tokenApprovals[_tokenId] = _approved;
         emit Approval(owner, _approved, _tokenId);
     }
